@@ -19,7 +19,7 @@ const askQuestion = (index) => {
     const envContent = Object.entries(envVars)
       .map(([key, value]) => `${key}=${value}`)
       .join("\n");
-    fs.writeFileSync(".env", envContent);
+    fs.writeFileSync("backend/.env", envContent);
     console.log(".env file created successfully.");
     rl.close();
     return;
