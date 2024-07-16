@@ -127,7 +127,7 @@ app.post("/send-emails", (req, res) => {
       clearInterval(emailInterval);
       console.log("All emails sent.");
     }
-  }, 2000); // 2 seconds interval
+  }, 4000); // 2 seconds interval
 
   res.sendStatus(200);
 });
