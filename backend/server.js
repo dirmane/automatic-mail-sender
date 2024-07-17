@@ -34,6 +34,10 @@ const transporter = nodemailer.createTransport({
     user: senderEmail,
     pass: senderPassword,
   },
+  tls: {
+    maxVersion: 'TLSv1.3',
+    minVersion: 'TLSv1.2',
+  }
 });
 
 // Function to read the JSON file and parse the email addresses
