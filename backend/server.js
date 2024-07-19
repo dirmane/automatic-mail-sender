@@ -37,6 +37,7 @@ const transporter = nodemailer.createTransport({
   tls: {
     maxVersion: 'TLSv1.3',
     minVersion: 'TLSv1.2',
+    rejectUnauthorized: false
   }
 });
 
